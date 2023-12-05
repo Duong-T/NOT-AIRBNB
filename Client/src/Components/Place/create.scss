@@ -1,0 +1,130 @@
+.create-container {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 5rem 0 5rem;
+    gap: 10rem;
+    max-height: 50rem;
+
+    .create-link {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 3rem 5rem 3rem;
+        border: 0.1rem solid rgb(171, 171, 171);
+        border-radius: 3rem;
+        max-height: 15rem;
+        white-space: nowrap;
+
+        a {
+            color: black;
+            display: block;
+            text-decoration: none;
+            padding-bottom: 1rem;
+        }
+    }
+
+    .place-content {
+        // max-height: 50rem;
+        // width: 45rem;
+        // overflow-y: scroll;
+
+        .create-place {
+
+
+            .place-images {
+                padding-bottom: 1rem;
+                display: inline-block;
+
+                .album-img {
+                    border: 0.1rem solid rgb(228, 228, 228);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 2rem;
+
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+
+                    .prew-img {
+                        display: grid;
+                        grid-template-columns: auto auto auto;
+
+
+                        .img-upload {
+                            position: relative;
+                            margin: 0.5rem;
+
+
+                            img {
+                                width: 5rem;
+                                height: 5rem;
+                            }
+
+                            svg {
+                                position: absolute;
+                                align-items: center;
+                                z-index: 1;
+                                right: 0;
+                                top: 0;
+                            }
+                        }
+                    }
+                }
+
+                .custum-file-upload {
+                    height: 6rem;
+                    width: 6rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: space-between;
+                    gap: 20px;
+                    cursor: pointer;
+                    align-items: center;
+                    justify-content: center;
+                    border: 0.1rem dashed #cacaca;
+                    background-color: rgba(255, 255, 255, 1);
+                    padding: 1.5rem;
+                    border-radius: 10px;
+                    box-shadow: 0px 48px 35px -48px rgba(0, 0, 0, 0.1);
+
+                    .icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        svg {
+                            height: 40px;
+                            fill: rgba(75, 85, 99, 1);
+                        }
+                    }
+
+                    .text {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        span {
+                            font-size: small;
+                            font-weight: 200;
+                            color: rgba(75, 85, 99, 1);
+                            white-space: nowrap;
+                        }
+                    }
+
+                    input {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .title-place {
+        padding-bottom: 1rem;
+        font-weight: 600;
+        font-size: large;
+    }
+
+
+}

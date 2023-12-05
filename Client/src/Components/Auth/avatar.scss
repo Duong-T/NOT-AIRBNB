@@ -1,0 +1,160 @@
+.avatar-page {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+    .avatar-container {
+        width: 35rem;
+        height: fit-content;
+        display: flex;
+        box-sizing: border-box;
+        background-color: white;
+        flex-direction: column;
+        margin: 0;
+        border-radius: 1rem;
+        z-index: 1;
+
+        .avatar-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0 0.5rem 0;
+
+            border-bottom-width: 0.1rem;
+            border-bottom-style: solid;
+            border-bottom-color: rgb(221, 221, 221);
+
+            .back-icon {
+                cursor: pointer;
+                padding-left: 1rem;
+                height: 2rem;
+                width: 2rem;
+                display: block;
+                overflow: visible;
+                fill: rgba(0, 0, 0, 1);
+                stroke: white;
+                stroke-width: 1;
+            }
+
+            .text-header {
+                display: block;
+                font-size: 0.7rem;
+            }
+
+            span {
+                padding-right: 2.5rem;
+            }
+
+        }
+
+        .avatar-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1.5rem;
+
+            .text-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0 3rem 0 3rem;
+
+                .text-1 {
+                    display: block;
+                    padding-bottom: 0.3rem;
+                    font-weight: 600;
+                }
+
+                .text-title {
+                    display: block;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    padding-bottom: 0.3rem;
+                }
+
+                .text-2 {
+                    display: block;
+                    font-size: 1.1rem;
+                }
+            }
+
+            .img-avatar {
+                height: 15rem;
+                width: 15rem;
+                border-radius: 10rem;
+                padding: 1rem;
+            }
+
+            .img-content {
+                padding: 0;
+                height: 15rem;
+                width: 15rem;
+                fill: rgba(0, 0, 0, 0.15);
+                stroke: white;
+                stroke-width: 0.05rem;
+            }
+
+            .upload-btn {
+                cursor: pointer;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                box-sizing: border-box;
+                width: 32rem;
+                height: 3.5rem;
+                border: 0;
+                border-radius: 0.5rem;
+                background-color: black;
+
+                .icon-btn {
+                    fill: white;
+                    padding-left: 0.5rem;
+                }
+
+                .text-btn {
+                    color: white;
+                    font-size: 1.1rem;
+                }
+
+                .space-right {
+                    padding-right: 2rem;
+                }
+
+                input {
+                    display: none;
+                }
+            }
+
+            .submit-img {
+                margin-top: 1rem;
+                cursor: pointer;
+                width: 32rem;
+                box-sizing: border-box;
+                height: 3.5rem;
+                color: white;
+                background-color: #e61e4d;
+                border-radius: 0.5rem;
+                border-color: white;
+                border-style: solid;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+
+            .upload-later {
+                cursor: pointer;
+                font-weight: bold;
+                padding-top: 1rem;
+            }
+        }
+    }
+}

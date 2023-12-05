@@ -1,0 +1,84 @@
+.section-container {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .ready-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .ready-title {
+            padding-right: 1rem;
+            font-weight: 600;
+            font-size: 3rem;
+            padding-bottom: 1rem;
+        }
+
+        .ready-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border: 0 solid white;
+            background-color: red;
+            color: white;
+            border-radius: 0.5rem;
+            width: 14rem;
+            height: 4rem;
+            cursor: pointer;
+
+            svg {
+                fill: rgba(255, 255, 255, 1);
+                stroke-width: 0.1rem;
+                stroke: none;
+                padding-right: 1rem;
+            }
+
+            div {
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .setup-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+
+        .setup-title {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .setup-img {
+            padding: 2rem;
+            width: 75rem;
+            height: 30rem;
+        }
+
+        .setup-info {
+            display: flex;
+            flex-direction: row;
+
+            .setup-text {
+                padding-right: 1rem;
+                padding-left: 1rem;
+
+                h1 {
+                    font-size: 1.3rem;
+                }
+
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
